@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/theme/abstract/reset';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+@import './app/theme/abstract/grid';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}

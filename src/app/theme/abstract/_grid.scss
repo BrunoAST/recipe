@@ -1,0 +1,202 @@
+@import './breakpoint';
+
+$cols: 12;
+$gutter: 20px;
+
+// Funções do grid.
+@function col($col, $offset: false) {
+    $width: $col / $cols * 100 + '%';
+    $result: calc(#{$width} - #{$gutter});
+
+    @if $offset == offset {
+        $gutter: $gutter / 2;
+        $result: calc(#{$width} + #{$gutter});
+    }
+
+    @return $result;
+}
+
+// Gerar classes de grid.
+@for $i from 1 through $cols {
+    .col-#{$i} {
+        width: col($i);
+    }
+
+    .col-xs-#{$i} {
+        width: col($i);
+    }
+
+    .col-sm-#{$i} {
+        width: col($i);
+    }
+
+    .col-md-#{$i} {
+        width: col($i);
+    }
+
+    .col-lg-#{$i} {
+        width: col($i);
+    }
+
+    .col-lt-sm-#{$i} {
+        width: col($i);
+    }
+
+    .col-lt-md-#{$i} {
+        width: col($i);
+    }
+
+    .col-lt-lg-#{$i} {
+        width: col($i);
+    }
+
+    .col-gt-xs-#{$i} {
+        width: col($i);
+    }
+
+    .col-gt-sm-#{$i} {
+        width: col($i);
+    }
+
+    .col-gt-md-#{$i} {
+        width: col($i);
+    }
+
+    .col-gt-lg-#{$i} {
+        width: col($i);
+    }
+}
+
+// Mixin estrutura do grid.
+@mixin col-default-structure {
+    float: left;
+    min-height: 1px;
+    margin-left: $gutter / 2;
+    margin-right: $gutter / 2;
+}
+
+@mixin reset-col {
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+[class^="col-"] {
+    @include col-default-structure;
+}
+
+[class^="col-xs-"] {
+    @include col-default-structure;
+    @include media-breakpoint('xs') {
+        @include reset-col;
+    }
+}
+
+[class^="col-sm-"] {
+    @include col-default-structure;
+    @include media-breakpoint('sm') {
+        @include reset-col;
+    }
+}
+
+[class^="col-md-"] {
+    @include col-default-structure;
+    @include media-breakpoint('md') {
+        @include reset-col;
+    }
+}
+
+[class^="col-lg-"] {
+    @include col-default-structure;
+    @include media-breakpoint('lg') {
+        @include reset-col;
+    }
+}
+
+[class^="col-lt-sm-"] {
+    @include col-default-structure;
+    @include media-breakpoint('lt-sm') {
+        @include reset-col;
+    }
+}
+
+[class^="col-lt-md-"] {
+    @include col-default-structure;
+    @include media-breakpoint('lt-md') {
+        @include reset-col;
+    }
+}
+
+[class^="col-lt-lg-"] {
+    @include col-default-structure;
+    @include media-breakpoint('lt-lg') {
+        @include reset-col;
+    }
+}
+
+[class^="col-gt-xs-"] {
+    @include col-default-structure;
+    @include media-breakpoint('gt-xs') {
+        @include reset-col;
+    }
+}
+
+[class^="col-gt-sm-"] {
+    @include col-default-structure;
+    @include media-breakpoint('gt-sm') {
+        @include reset-col;
+    }
+}
+
+[class^="col-gt-md-"] {
+    @include col-default-structure;
+    @include media-breakpoint('gt-md') {
+        @include reset-col;
+    }
+}
+
+[class^="col-gt-lg-"] {
+    @include col-default-structure;
+    @include media-breakpoint('gt-lg') {
+        @include reset-col;
+    }
+}
+
+// Gerar classes de offset.
+@for $i from 1 through $cols {
+    .offset-#{$i} {
+        margin-left: col($i, offset);
+        @extend %offset;
+    }
+}
+
+@include media-breakpoint('sm') {
+    %offset {
+        margin-left: 0px;
+    }
+}
+
+// Mixin container.
+@mixin container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0px auto;
+    // padding-left: 10px;
+    // padding-right: 10px;
+}
+
+.container {
+    @include container;
+}
+
+@mixin row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$gutter / 2;
+    margin-right: -$gutter / 2;
+}
+
+.row {
+    @include row;
+}
