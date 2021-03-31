@@ -179,11 +179,10 @@ $gutter: 20px;
 
 // Mixin container.
 @mixin container {
-    max-width: 100%;
-    width: 100%;
-    margin: 0px auto;
-    // padding-left: 10px;
-    // padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
 .container {

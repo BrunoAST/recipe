@@ -1,0 +1,11 @@
+<div class="container">
+<h1> Our Awesome Services </h1>
+<div class="container-cards"> 
+    <div class="card" *ngFor="let img of imagens"> 
+        <figure>
+            <img [src]="img.imagem">
+        </figure>
+        <span class="nome cor-cinza-escuro-fg"> {{img.nome}} </span>
+    </div>
+</div>
+</div>

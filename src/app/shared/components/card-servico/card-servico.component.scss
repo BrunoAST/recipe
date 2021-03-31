@@ -1,0 +1,34 @@
+h1 {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;  
+}
+
+.container-cards {
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.card {
+    border-radius: 10px;
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid #c2b7aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    box-shadow: -2px 3px 45px -20px #c2b7aa;
+}
+
+img {
+    width: 60px;
+}
+
+.nome {
+    font-size: 1.2rem;  
+   text-align: center;
+}
