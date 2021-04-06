@@ -1,15 +1,15 @@
 button {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 100;
+    padding: .875rem;
     color: white;
     border: none;
     border-radius: 5px;
     outline: none;
-    text-transform: uppercase;
-    height: 2rem;
-    width: 180px;
+    width: auto;
+    cursor: pointer;
 }
 
-.button-principal {
-    padding: 5px 15px;    
-}
+// .button-principal {
+//     padding: 5px 15px;    
+// }

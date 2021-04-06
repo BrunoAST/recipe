@@ -4,12 +4,28 @@
     color: $cinza-escuro;
 }
 
-.cor-branco-bg{
+.cor-branco-bg {
     background-color: $branco;    
 }
 
-.cor-ciza-claro-fg{
-    color: $cinza
+.cor-ciza-claro-fg {
+    color: $texto-secundario;
+}
+
+.cor-texto-primario-bg {
+    background-color: $texto-primario;
+}
+
+.cor-texto-primario-fg {
+    color: $texto-primario;
+}
+
+.cor-cinza-claro-bg {
+    background-color: $cinza-claro;
+}
+
+.cor-cinza-claro-fg {
+    color: $cinza-claro;
 }
 
 .cor-principal-bg {

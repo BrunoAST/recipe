@@ -7,13 +7,14 @@
             <figure>
                 <img class="prato" [src]="img.imagem">
             </figure>
+
             <div class="text">
                 <p class="text__nome">{{img.nome}}</p>
                 <p class="text__price">{{img.price}}</p>
             </div>
 
             <div class="text_sec">
-                <p class="text_offer">{{img.text}}</p>
+                <p class="text_offer cor-principal-bg">{{img.text}}</p>
                 <span class="star">
                     <ng-container *ngFor="let star of img.stars">
                         <img class="stars" src="assets/star.svg" alt="">

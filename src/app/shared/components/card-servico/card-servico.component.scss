@@ -1,3 +1,5 @@
+@import '../../../theme/abstract/colors';
+
 h1 {
     align-self: flex-start;
     font-size: 1.75rem;
@@ -15,14 +17,14 @@ h1 {
     border-radius: 10px;
     height: 12rem;
     width: 15rem;
-    border: 1px solid #c2b7aa;
+    border: 2px solid $cinza-claro;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
     background-color: white;
-    box-shadow: -2px 3px 45px -20px #c2b7aa;
+    box-shadow: -2px 3px 45px -20px $cinza-claro;
 }
 
 img {
