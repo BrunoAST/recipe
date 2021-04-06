@@ -5,54 +5,69 @@
         ramatically actualize </h2>
 
     <form
-        action=""
-        method="post"
         class="formulario"
+        [formGroup]="formularioService.form"
     >
         <p class="title1"> Book a Table </p>
         <p class="title2"> Contact Details</p>
+
         <input
+            formControlName="data"
+            disabled
             class="date"
             type="datetime"
             name="date"
             placeholder="25 december 2019
         "
         >
+
         <input
+            [formControl]="formularioService.form.get('nome')"
             class="name"
             type="text"
             name="name"
             placeholder=" Your name"
         >
+
         <input
+            formControlName="hora"
             class="hour"
             type="text"
             name="hour"
             placeholder="19:00"
         >
+
         <input
+            formControlName="email"
             class="email"
             type="email"
             name="email"
             placeholder="Email"
         >
+
         <input
+            formControlName="quantidadePessoas"
             class="people"
             type="text"
             name="people"
             placeholder="2 people"
         >
+
         <input
+            formControlName="telefone"
             class="phone"
             type="tel"
             name="phone"
             placeholder="Phone"
         >
+
         <input
+            formControlName="mensagem"
             class="message"
             type="text"
             placeholder="Message"
         >
+
         <button class="button-principal button">Request Booking</button>
     </form>
 
