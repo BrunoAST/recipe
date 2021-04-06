@@ -27,9 +27,7 @@ export class CardServicoComponent implements OnInit {
   {
   nome: 'Drinks & Bar',
   imagem: "../../../../assets/cocktail.svg"
-  },
-
-
+  }
 ]
 
 

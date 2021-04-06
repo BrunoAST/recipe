@@ -1,0 +1,16 @@
+.container-navs {
+    display: flex;
+    justify-content: space-between;
+    max-width: 68vw;
+    align-items: center;
+}
+
+.links {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.links > a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+}

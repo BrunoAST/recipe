@@ -1,11 +1,15 @@
 button {
+    font-size: 1.1rem;
+    font-weight: 100;
     color: white;
     border: none;
     border-radius: 5px;
     outline: none;
     text-transform: uppercase;
+    height: 2rem;
+    width: 180px;
 }
 
 .button-principal {
-    padding: 10px 20px;
+    padding: 5px 15px;    
 }

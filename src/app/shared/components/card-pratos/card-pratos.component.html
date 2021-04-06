@@ -1,0 +1,36 @@
+<div class="container">
+    <h1> Our special Dishes </h1>
+    <h2>Rapidiously plagiarize scalable manufactured products for <br>
+        realtime ramatically actualize</h2>
+    <div class="container-cards" #imagensContainer>
+        <div class="card" *ngFor="let img of imagens">
+            <figure>
+                <img class="prato" [src]="img.imagem">
+            </figure>
+            <div class="text">
+                <p class="text__nome">{{img.nome}}</p>
+                <p class="text__price">{{img.price}}</p>
+            </div>
+
+            <div class="text_sec">
+                <p class="text_offer">{{img.text}}</p>
+                <span class="star">
+                    <ng-container *ngFor="let star of img.stars">
+                        <img class="stars" src="assets/star.svg" alt="">
+                    </ng-container>
+
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="setas">
+        <button (click)="voltar($event)"> 
+            <img class="leftarrow" src="assets/left-arrow.svg" alt="seta para esquerda"> 
+        </button>
+        <button (click)="avancar($event)">
+            <img class="rightarrow" src="assets/right-arrow.svg" alt="seta para direita">
+        </button>
+    </div>
+</div>

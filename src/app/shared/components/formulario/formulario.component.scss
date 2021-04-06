@@ -1,0 +1,85 @@
+.container-form {
+    width: 50vw;
+    margin: 0 auto;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 2rem; 
+    margin-top: 3rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    color: #8597AB;
+}
+
+.formulario {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:    "title1      title2"
+                            "date       name"
+                            "hour       email"
+                            "people     phone"
+                            "message    message"
+                            "button     button"
+                            ;
+}
+
+.title1 {
+    grid-area: title1;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.title2 {
+    grid-area: title2;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.date {
+    grid-area: date;
+}
+
+.name {
+    grid-area: name;
+}
+
+.hour {
+    grid-area: hour;
+}
+
+.email {
+    grid-area: email;
+}
+
+.people {
+    grid-area: people;
+}     
+
+.phone {
+    grid-area: phone;
+}
+.message {
+    grid-area: message;
+}    
+
+input {
+    height: 2rem;
+    width: auto;
+}
+
+button {
+    grid-area: button;
+    margin: 0 auto;
+
+    
+}
