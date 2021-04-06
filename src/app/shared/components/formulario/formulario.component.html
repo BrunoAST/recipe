@@ -6,15 +6,11 @@
 
     <form
         class="formulario"
-        [formGroup]="formularioService.form"
     >
         <p class="title1"> Book a Table </p>
         <p class="title2"> Contact Details</p>
 
         <input
-            formControlName="data"
-            disabled
-            class="date"
             type="datetime"
             name="date"
             placeholder="25 december 2019
@@ -22,7 +18,6 @@
         >
 
         <input
-            [formControl]="formularioService.form.get('nome')"
             class="name"
             type="text"
             name="name"
@@ -30,7 +25,6 @@
         >
 
         <input
-            formControlName="hora"
             class="hour"
             type="text"
             name="hour"
@@ -38,7 +32,6 @@
         >
 
         <input
-            formControlName="email"
             class="email"
             type="email"
             name="email"
@@ -46,7 +39,6 @@
         >
 
         <input
-            formControlName="quantidadePessoas"
             class="people"
             type="text"
             name="people"
@@ -54,7 +46,6 @@
         >
 
         <input
-            formControlName="telefone"
             class="phone"
             type="tel"
             name="phone"
@@ -62,7 +53,6 @@
         >
 
         <input
-            formControlName="mensagem"
             class="message"
             type="text"
             placeholder="Message"
