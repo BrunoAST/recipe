@@ -7,6 +7,7 @@ import { NavModule } from 'src/app/shared/components/nav/nav.module';
 import { CardPratosModule } from 'src/app/shared/components/card-pratos/card-pratos.module';
 import { FormularioModule } from 'src/app/shared/components/formulario/formulario.module';
 
+
 @NgModule({
   declarations: [HomeComponent],
   imports: [
@@ -15,7 +16,7 @@ import { FormularioModule } from 'src/app/shared/components/formulario/formulari
     InfoInicialModule,
     NavModule,
     CardPratosModule,
-    FormularioModule
-  ]
+    FormularioModule,
+]
 })
 export class HomeModule { }

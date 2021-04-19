@@ -5,19 +5,22 @@
         ramatically actualize </h2>
 
     <form
-        class="formulario"
+        [formGroup]="form2.cadastroForm"
+        (ngSubmit)="enviarFormulario()"
+        class="formulario" 
     >
         <p class="title1"> Book a Table </p>
         <p class="title2"> Contact Details</p>
 
         <input
+            formControlName= "date"
             type="datetime"
             name="date"
-            placeholder="25 december 2019
-        "
+            placeholder="25 december 2019"
         >
 
         <input
+            formControlName= "name"
             class="name"
             type="text"
             name="name"
@@ -25,6 +28,7 @@
         >
 
         <input
+            formControlName= "hour"
             class="hour"
             type="text"
             name="hour"
@@ -32,6 +36,7 @@
         >
 
         <input
+            formControlName= "email"
             class="email"
             type="email"
             name="email"
@@ -39,6 +44,7 @@
         >
 
         <input
+            formControlName= "people"
             class="people"
             type="text"
             name="people"
@@ -46,6 +52,7 @@
         >
 
         <input
+            formControlName= "phone"
             class="phone"
             type="tel"
             name="phone"
@@ -53,6 +60,7 @@
         >
 
         <input
+            formControlName= "message"
             class="message"
             type="text"
             placeholder="Message"

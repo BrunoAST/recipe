@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
@@ -14,6 +16,7 @@ import { MainModule } from './main/main.module';
     BrowserModule,
     RouterModule,
     MainModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
